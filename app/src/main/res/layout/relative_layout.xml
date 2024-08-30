@@ -1,0 +1,43 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".activity_page_relative_layout">
+    <!-- 2301093019
+         Muhammad Zacky
+         MI 2 B
+         Tugas 3
+         user Github : F0RENS1C
+            -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="reminder"/>
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dates"
+            android:layout_below="@id/etName"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@id/times" />
+
+        <Spinner
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/times"
+            android:layout_below="@id/etName"
+            android:layout_alignParentRight="true"/>
+
+        <Button
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/times"
+            android:layout_alignParentRight="true"
+            android:text="DONE"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
